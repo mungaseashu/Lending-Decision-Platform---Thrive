@@ -1,0 +1,29 @@
+# .NET Core
+bin/
+obj/
+TestResults/
+*.user
+*.suo
+*.sln.docstates
+.vscode/
+
+# Environment files
+.env
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# macOS
+.DS_Store
+
+# Frontend
+node_modules/
+dist/
+build/
+.next/
+
+# Misc
+logs/
+*.log
