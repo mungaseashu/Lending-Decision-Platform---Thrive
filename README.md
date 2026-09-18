@@ -121,8 +121,43 @@ The React frontend is decoupled from the lending rules and acts as a client of t
                     │ EF Core / SQLite     │
                     └──────────────────────┘
 
-## 5.Folder Structure
+## 5. Folder Structure
 
+```text
+Lending-Decision-Platform---Thrive/
+│
+├── backend/
+│   ├── src/
+│   │   ├── Lending.Api/
+│   │   ├── Lending.Application/
+│   │   ├── Lending.Domain/
+│   │   └── Lending.Infrastructure/
+│   │
+│   └── tests/
+│       ├── Lending.Api.Tests/
+│       ├── Lending.Domain.Tests/
+│       └── Lending.Infrastructure.Tests/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── types/
+│   │
+│   ├── public/
+│   ├── package.json
+│   └── ...
+│
+├── docs/
+│   ├── architecture.md
+│   ├── business-rules.md
+│   └── ...
+│
+├── AI_LOG.md
+├── README.md
+└── .gitignore
+```
 
 
 ## 6. Business Rules
@@ -229,7 +264,9 @@ Returns aggregated lending statistics.
 Install:
 
 .NET 8 SDK
+
 Node.js v18+
+
 Git
 
 ## 10. Local Setup
