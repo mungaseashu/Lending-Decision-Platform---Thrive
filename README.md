@@ -280,6 +280,7 @@ Navigate to the backend directory:
 cd backend
 
 Run the API:
+$env:Path += ";<YOUR_PROJECT_PATH>"
 dotnet run --project src/Lending.Api
 
 The backend runs at:
