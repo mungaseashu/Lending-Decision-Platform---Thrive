@@ -9,6 +9,7 @@ Lending.db
 Lending.db-shm
 Lending.db-wal
 appsettings.Development.json
+.dotnet/
 
 # Node
 node_modules/
