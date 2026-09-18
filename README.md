@@ -1,4 +1,4 @@
-# Blackfinch Lending Platform
+# Lending Decision Platform
 
 A full-stack lending decision platform that evaluates loan applications using configurable LTV and credit-score rules, provides explainable decisions, and presents application statistics through a React web interface.
 
@@ -6,16 +6,16 @@ A full-stack lending decision platform that evaluates loan applications using co
 
 ## 1. Project Overview
 
-The **Blackfinch Lending Platform** is a full-stack web application designed to process loan application data:
+The Lending Decision Platform is a full-stack web application designed to process loan application data:
 
 - Loan Amount
 - Asset Value
 - Credit Score
 
-The application calculates the **Loan-to-Value (LTV)** ratio and evaluates the application against the defined lending rules to produce an immediate:
+The application calculates the Loan-to-Value (LTV) ratio and evaluates the application against the defined lending rules to produce an immediate:
 
-- **Approved**
-- **Declined**
+- Approved
+- Declined
 
 decision.
 
