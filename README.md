@@ -123,58 +123,16 @@ The React frontend is decoupled from the lending rules and acts as a client of t
 
 ## 5.Folder Structure
 
-Lending-Platform/
-│
-├── backend/
-│   │
-│   ├── src/
-│   │   ├── Lending.Api/
-│   │   │   ├── Controllers/
-│   │   │   └── ...
-│   │   │
-│   │   ├── Lending.Application/
-│   │   │   ├── DTOs/
-│   │   │   ├── Services/
-│   │   │   └── ...
-│   │   │
-│   │   ├── Lending.Domain/
-│   │   │   ├── Entities/
-│   │   │   ├── ValueObjects/
-│   │   │   └── Business Rules/
-│   │   │
-│   │   └── Lending.Infrastructure/
-│   │       ├── Data/
-│   │       ├── Repositories/
-│   │       └── ...
-│   │
-│   └── tests/
-│       ├── Lending.Api.Tests/
-│       ├── Lending.Domain.Tests/
-│       └── Lending.Infrastructure.Tests/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   └── types/
-│   │
-│   └── ...
-│
-├── docs/
-│   ├── architecture.md
-│   ├── business-rules.md
-│   └── ...
-│
-├── AI_LOG.md
-├── README.md
-└── 
+
 
 ## 6. Business Rules
 
 General Loan Limits
+
 Condition	            Decision
+
 Loan < £100,000	      Declined
+
 Loan > £1,500,000	    Declined
 
 High-Value Loans
@@ -189,9 +147,13 @@ Standard Loans
 For loans below £1,000,000:
 
 LTV	       Required Credit Score
+
 LTV < 60%	     ≥ 750
+
 LTV < 80%	     ≥ 800
+
 LTV < 90%	     ≥ 900
+
 LTV ≥ 90%	     Declined
 
 ## 7. LTV Calculation
@@ -215,12 +177,16 @@ The frontend may display a live LTV preview, but the backend recalculates the va
 For loans below £1,000,000, the implementation interprets the specified strict < conditions as:
 
 0% ≤ LTV < 60%
+
 60% ≤ LTV < 80%
+
 80% ≤ LTV < 90%
+
 LTV ≥ 90%
 
 For loans greater than or equal to £1,000,000:
 LTV ≤ 60%
+
 Credit Score ≥ 950
 
 Borderline LTV values are evaluated using the calculated decimal value rather than being pre-rounded before rule evaluation.
@@ -282,9 +248,6 @@ dotnet run --project src/Lending.Api
 The backend runs at:
 http://localhost:5062
 
-Swagger:
-http://localhost:5062/swagger
-
 Health check:
 http://localhost:5062/health
 
@@ -319,12 +282,19 @@ dotnet test
 The current implementation contains 88 backend xUnit tests covering business rules, validation, boundary conditions, and related functionality.
 
 The test suite includes:
+
 Loan amount boundaries
+
 LTV boundaries
+
 Credit-score thresholds
+
 £1 million high-value loan rules
+
 Invalid input
+
 Decision explanations
+
 Persistence behavior
 
 ## 13. Assumptions
@@ -348,18 +318,31 @@ This project is designed as a technical assessment and is not intended to repres
 For a production implementation, potential improvements could include:
 
 PostgreSQL or SQL Server
+
 Authentication and authorization
+
 Audit logging
+
 Structured application logging
+
 Monitoring and alerting
+
 Distributed tracing
+
 Secrets management
+
 CI/CD pipelines
+
 Database backup and recovery
+
 API versioning
+
 Rate limiting
+
 Additional integration and end-to-end testing
+
 Production-grade infrastructure
+
 Stronger financial and audit controls
 
 ## 15. AI-Assisted Development
@@ -369,12 +352,19 @@ AI tools were used for the development process as engineering assistants.
 AI assistance was used for:
 
 Requirements analysis
+
 Architecture design
+
 Business-rule implementation
+
 Test generation
+
 Code review
+
 Debugging
+
 Refactoring
+
 Documentation
 
 AI-generated suggestions were reviewed and tested rather than blindly accepting.
