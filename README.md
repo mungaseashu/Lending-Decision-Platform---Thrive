@@ -90,7 +90,7 @@ The React frontend is decoupled from the lending rules and acts as a client of t
 
 ### Architecture Overview
 
-```text
+
                     ┌──────────────────────┐
                     │     React Client     │
                     │  React + TypeScript  │
@@ -120,7 +120,7 @@ The React frontend is decoupled from the lending rules and acts as a client of t
                     │ Lending.Infrastructure│
                     │ EF Core / SQLite     │
                     └──────────────────────┘
-```
+
 ## 5.Folder Structure
 
 Lending-Platform/
@@ -188,11 +188,11 @@ Both conditions must be satisfied.
 Standard Loans
 For loans below £1,000,000:
 
-LTV	            Required Credit Score
-LTV < 60%	          ≥ 750
-LTV < 80%	          ≥ 800
-LTV < 90%	          ≥ 900
-LTV ≥ 90%	          Declined
+LTV	       Required Credit Score
+LTV < 60%	     ≥ 750
+LTV < 80%	     ≥ 800
+LTV < 90%	     ≥ 900
+LTV ≥ 90%	     Declined
 
 ## 7. LTV Calculation
 
@@ -213,6 +213,7 @@ The frontend may display a live LTV preview, but the backend recalculates the va
 ## LTV Boundary Interpretation
 
 For loans below £1,000,000, the implementation interprets the specified strict < conditions as:
+
 0% ≤ LTV < 60%
 60% ≤ LTV < 80%
 80% ≤ LTV < 90%
@@ -228,26 +229,31 @@ Borderline LTV values are evaluated using the calculated decimal value rather th
 ## 8. API EndPoints
 
 Submit Loan Application
+
 POST /api/loan-applications
 
 Submits a new loan application and evaluates the lending rules.
 
 Retrieve Applications
+
 GET /api/loan-applications
 
 Returns persisted loan applications.
 
 Retrieve Application Details
+
 GET /api/loan-applications/{id}
 
 Returns detailed information about a specific application.
 
 Decision Simulator
+
 GET /api/loan-applications/{id}/simulate
 
 Returns hypothetical mathematical scenarios related to the application's lending conditions.
 
 Dashboard
+
 GET /api/dashboard
 
 Returns aggregated lending statistics.
