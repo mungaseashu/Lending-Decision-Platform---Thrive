@@ -407,3 +407,26 @@ Documentation
 
 AI-generated suggestions were reviewed and tested rather than blindly accepting.
 
+## 16.Preview
+
+1. Dashboard
+   Visual dashboard to see Total Applications, Total Approved/Declined Applications, Total Value Written, Mean Average LTV and Recent apllications
+   <img width="1891" height="821" alt="image" src="https://github.com/user-attachments/assets/fe0ec24e-6a1b-4dda-a057-2a23a9b22b94" />
+2. New Application
+   Interface for creating new application with Live LTV preview
+   <img width="1892" height="774" alt="image" src="https://github.com/user-attachments/assets/00872b63-bc90-4cc8-bc3a-77a65df3c472" />
+3. Accept/Decline Interface
+   Interface of Accepted and Declined applications
+   <img width="1033" height="840" alt="image" src="https://github.com/user-attachments/assets/c3261e93-f758-48b3-909b-d0e45dcebea6" />
+   <img width="790" height="898" alt="image" src="https://github.com/user-attachments/assets/767bcf84-de79-4cd9-bf13-2db0da9c2c8b" />
+4. View all the application
+   List of all the applications can be sorted according to date submitted, approved or declined and also view details of the submitted applications
+   <img width="1189" height="912" alt="image" src="https://github.com/user-attachments/assets/829a4e43-846f-44b5-9b6b-02784ad98e02" />
+5. Decision Simulator
+    A decision simulator which gives hypothetical mathematical calculations by which the application can get approved 
+   <img width="918" height="903" alt="image" src="https://github.com/user-attachments/assets/1687f832-f8ca-4376-9abb-c0e41ae605da" />
+
+
+
+
+
